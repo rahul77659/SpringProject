@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class productController {
     ///Instead of this use dependency Injection that is mak a constructor
-//    ProductService productService=new FakeStoreProductService();
+    // ProductService productService=new FakeStoreProductService();
     ////Dependency injection i.e. Let Spring creates teh object and passes
     ProductService productService;
-    public productController (ProductService productService){
+    public productController (ProductService productService)
+    {
         this.productService = productService;
     }
     @GetMapping("/products")
@@ -25,5 +26,6 @@ public class productController {
         return productService.getSingleProduct(id);
     }
 }
+
 
 
