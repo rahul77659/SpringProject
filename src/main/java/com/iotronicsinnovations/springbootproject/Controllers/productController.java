@@ -36,7 +36,7 @@ public ResponseEntity<List<Product>> getAllProducts() {
 
         ResponseEntity<List<Product>> responseEntity =
                 new ResponseEntity<>(responseData,
-                        HttpStatusCode.valueOf(205));
+                        HttpStatusCode.valueOf(200));//
 
 
 //        throw new RuntimeException();   // to Cheek 500 Status Code

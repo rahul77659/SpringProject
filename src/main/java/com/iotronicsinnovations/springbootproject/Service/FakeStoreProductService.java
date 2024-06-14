@@ -5,13 +5,14 @@ import com.iotronicsinnovations.springbootproject.Models.Product;
 import com.iotronicsinnovations.springbootproject.dtos.FakeStoreProductDto;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
 
 //@Component
-//@Service//Use any component  or service
+@Service//Use any component  or service
 //@Service("fakestoreProductService")
 public class FakeStoreProductService implements ProductService {
     RestTemplate restTemplate;

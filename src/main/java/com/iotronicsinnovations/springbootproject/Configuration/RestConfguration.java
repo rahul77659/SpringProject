@@ -22,10 +22,8 @@ public RestTemplate restTemplate(){
 //    public CreateProductRequestDto createProductRequestDto() {
 //        return new CreateProductRequestDto();
 //    }
-    @Bean
-    public FakeStoreProductService getProductService() {
-        return new FakeStoreProductService(new RestTemplate());
-    }
-
-
+//    @Bean
+//    public FakeStoreProductService getProductService() {
+//        return new FakeStoreProductService(new RestTemplate());
+//    }
 }
